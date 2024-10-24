@@ -1,0 +1,211 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    color: #2e7d32;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    padding: 20px 30px;
+    color: white;
+  }
+  
+  .main-header .logo h1 {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    margin-top: 5px;
+  }
+  /* Featured Projects Section */
+.featured-projects {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.featured-projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+.radio-tab-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.radio-tab {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.radio-tab:hover {
+    background-color: #f0f0f0;
+}
+
+input[type="radio"] {
+    display: none; /* Hide radio inputs */
+}
+
+input[type="radio"]:checked + .radio-tab {
+    background-color: #4CAF50; /* Active background color */
+    color: white; /* Active text color */
+}
+
+.tab-content-wrapper {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+#tab1:checked ~ .tab-content-wrapper #content1,
+#tab2:checked ~ .tab-content-wrapper #content2,
+#tab3:checked ~ .tab-content-wrapper #content3,
+#tab4:checked ~ .tab-content-wrapper #content4 {
+    display: block;
+}
+
+  /* Contact Section */
+  .contact-section {
+    background-color: #a5d6a7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input, 
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1b5e20;
+  }
+  
+  /* Footer */
+  .main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
