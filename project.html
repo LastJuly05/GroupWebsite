@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website IT - Project</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="images/logo.png" width="180px" height="100px" alt="Logo IT Company">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="group-diary.html">Group Diary</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Hotline: 1900 123 456</p>
+      <p>Email: Ourwebsite07@itcompany.com</p>
+    </div>
+  </header>
+
+  <!-- Group 7 Project Tab -->
+  <div class="tabs-container">
+    <div class="tab active" onclick="openTab('requirement', event)">Requirement</div>
+    <div class="tab" onclick="openTab('design', event)">Design</div>
+    <div class="tab" onclick="openTab('implement', event)">Implement</div>
+  </div>
+
+  <div class="tab-content-wrapper">
+    <!-- Requirement Tab Content -->
+    <div id="requirement" class="tab-content active">
+      <h3>Requirement</h3>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Functional</th>
+            <th>Designer</th>
+            <th>Perfomer</th>
+            <th>Intended time</th>
+            <th>Current status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Web interface</td>
+            <td>Lương Hoài Sang</td>
+            <td>Lương Hoài Sang</td>
+            <td>2 weeks</td>
+            <td>Complete</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Contact</td>
+            <td>Huỳnh Thị Ngọc Trân</td>
+            <td>Huỳnh Thị Ngọc Trân</td>
+            <td>2 weeks</td>
+            <td>Complete</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Group dairy</td>
+            <td>Bùi Hà Duy Phong</td>
+            <td>Bùi Hà Duy Phong</td>
+            <td>2 weeks</td>
+            <td>Complete</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Project</td>
+            <td>Trần Đức Trí</td>
+            <td>Trần Đức Trí</td>
+            <td>2 weeks</td>
+            <td>Complete</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>About</td>
+            <td>Lê Trọng Nghĩa</td>
+            <td>Lê Trọng Nghĩa</td>
+            <td>2 weeks</td>
+            <td>Complete</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Design Tab Content -->
+    <div class="tab-content" id="design">
+      <h3>Design</h3>
+      <p>Describe the project's design process, including wireframes, mockups, and related documents.</p>
+    </div>
+
+    <!-- Implement Tab Content -->
+    <div class="tab-content" id="implement">
+      <h3>Implement</h3>
+      <p>Describe the project execution process, including coding, testing, and system deployment.</p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(tabName, event) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        tabcontent[i].classList.remove("active");
+      }
+
+      tablinks = document.getElementsByClassName("tab");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+
+    // Show the default tab (requirement) by default
+    document.getElementById('requirement').style.display = 'block';
+  </script>
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-info">
+      <h3>IT Solutions</h3>
+      <p>We bring breakthrough technology solutions to your business.</p>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="group-diary.html">Group Diary</a></li>
+            <li><a href="project.css">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <p>Address: Đh Nông Lâm, Linh Trung, Thủ Đức, Hồ Chí Minh city</p>
+      <p>Hotline: 1900 123 456</p>
+      <p>Email: Ourwebsite07@itcompany.com</p>
+      <p>&copy; 2024 Group 07</p>
+    </div>
+  </footer>
+</body>
+
+</html>
