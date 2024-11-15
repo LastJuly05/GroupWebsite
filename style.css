@@ -13,25 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://i.postimg.cc/kX8Nj5Yf/Thien-Ly-2-Photo-Thi-n-H-o.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0;
-  color: var(--light-color);
-  display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  align-items: center; /* Căn giữa theo chiều dọc */
-}
-
-.hero-content {
-  text-align: center; /* Căn giữa nội dung theo chiều ngang */
-}
-
 /* Header */
 .main-header {
   display: flex;
@@ -65,7 +46,24 @@ body {
 .contact-info p {
   margin-top: 5px;
 }
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.postimg.cc/kX8Nj5Yf/Thien-Ly-2-Photo-Thi-n-H-o.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: var(--light-color);
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
 
+.hero-content {
+  text-align: center; /* Căn giữa nội dung theo chiều ngang */
+}
 /* Featured Projects Section */
 .featured-projects {
   padding: 50px 20px;
@@ -109,8 +107,6 @@ body {
   font-size: 1em;
   color: #555;
 }
-
-/* Tabs Section */
 .radio-tab-list {
   display: flex;
   flex-direction: column;
@@ -229,4 +225,230 @@ input[type="radio"]:checked + .radio-tab {
 
 .footer-links ul li a:hover {
   text-decoration: underline;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  outline: none;
+  width: 150px;
+}
+
+.signup-btn,
+.login-btn {
+  padding: 8px 15px;
+  border: none; /* Không có viền */
+  background-color: transparent; /* Không có màu nền */
+  color: #fff; /* Màu chữ trắng */
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+  border-radius: 20px; /* Góc bo tròn */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  opacity: 0.8;
+}
+/* Modal Login */
+.login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Make sure it's above other content */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Hiển thị modal và overlay khi nhấp vào login */
+#loginModal.active,
+#overlay.active {
+  display: block; /* Hiển thị khi lớp active được thêm */
+}
+
+/* Hiệu ứng fade-in khi mở modal */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Các phần tử trong form đăng nhập */
+.login-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Style cho input và textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #2e7d32;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Chỉnh sửa nút đăng nhập */
+.contact-form button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+.contact-form button:hover {
+  background-color: #1b5e20;
+}
+
+/* Style cho liên kết đăng ký */
+.contact-form a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #2e7d32;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Hiệu ứng hover cho liên kết đăng ký */
+.contact-form a:hover {
+  text-decoration: underline;
+}
+
+/* Đảm bảo chiều cao của cả hai khung đăng nhập và đăng ký đều bằng nhau */
+.login-modal,
+.signUp-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  animation: fadeIn 0.3s ease-in-out;
+  min-height: 400px; /* Đảm bảo chiều cao khung đủ lớn */
+}
+
+/* Cấu trúc container trong modal */
+.login-modal .login-container,
+.signUp-modal .signup-container {
+  text-align: center;
+  padding: 20px;
+  min-height: 300px; /* Giữ chiều cao container của cả hai modal giống nhau */
+}
+
+/* Chỉnh sửa input và button trong cả hai modal */
+.login-modal input,
+.signUp-modal input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-modal button,
+.signUp-modal button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover hiệu ứng cho nút đăng nhập và đăng ký */
+.login-modal button:hover,
+.signUp-modal button:hover {
+  background-color: #45a049;
+}
+
+/* Liên kết cho đăng ký và đăng nhập */
+.login-modal a,
+.signUp-modal a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #4caf50;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-modal a:hover,
+.signUp-modal a:hover {
+  text-decoration: underline;
+}
+
+/* Đảm bảo Modal Sign Up được hiển thị đúng */
+#signUpModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+}
+
+/* Modal Sign Up sẽ hiển thị khi có lớp 'active' */
+#signUpModal.active {
+  display: block;
+}
+
+/* Overlay cho cả hai modal */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1040;
+}
+
+#overlay.active {
+  visibility: visible;
+  opacity: 1;
 }
