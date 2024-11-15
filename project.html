@@ -1,159 +1,292 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website IT - Project</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website IT - Project</title>
-  <link rel="stylesheet" href="project.css">
-</head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          width="180px"
+          height="100px"
+          alt="Logo IT Company"
+        />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="group-diary.html">Group Diary</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="login.html" onclick="openLoginModal()">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- Header -->
-  <header class="main-header">
-    <div class="logo">
-      <img src="images/logo.png" width="180px" height="100px" alt="Logo IT Company">
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="group-diary.html">Group Diary</a></li>
-        <li><a href="project.html">Project</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="contact-info">
-      <p>Hotline: 1900 123 456</p>
-      <p>Email: Ourwebsite07@itcompany.com</p>
-    </div>
-  </header>
-
-  <!-- Group 7 Project Tab -->
-  <div class="tabs-container">
-    <div class="tab active" onclick="openTab('requirement', event)">Requirement</div>
-    <div class="tab" onclick="openTab('design', event)">Design</div>
-    <div class="tab" onclick="openTab('implement', event)">Implement</div>
-  </div>
-
-  <div class="tab-content-wrapper">
-    <!-- Requirement Tab Content -->
-    <div id="requirement" class="tab-content active">
-      <h3>Requirement</h3>
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Functional</th>
-            <th>Designer</th>
-            <th>Perfomer</th>
-            <th>Intended time</th>
-            <th>Current status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Web interface</td>
-            <td>Lương Hoài Sang</td>
-            <td>Lương Hoài Sang</td>
-            <td>2 weeks</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Contact</td>
-            <td>Huỳnh Thị Ngọc Trân</td>
-            <td>Huỳnh Thị Ngọc Trân</td>
-            <td>2 weeks</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Group dairy</td>
-            <td>Bùi Hà Duy Phong</td>
-            <td>Bùi Hà Duy Phong</td>
-            <td>2 weeks</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Project</td>
-            <td>Trần Đức Trí</td>
-            <td>Trần Đức Trí</td>
-            <td>2 weeks</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>About</td>
-            <td>Lê Trọng Nghĩa</td>
-            <td>Lê Trọng Nghĩa</td>
-            <td>2 weeks</td>
-            <td>Complete</td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </tbody>
-      </table>
+    <!-- Group 7 Project Tab -->
+    <div class="tabs-container">
+      <div class="tab active" onclick="openTab('requirement', event)">
+        Requirement
+      </div>
+      <div class="tab" onclick="openTab('design', event)">Design</div>
+      <div class="tab" onclick="openTab('implement', event)">Implement</div>
     </div>
 
-    <!-- Design Tab Content -->
-    <div class="tab-content" id="design">
-      <h3>Design</h3>
-      <p>Describe the project's design process, including wireframes, mockups, and related documents.</p>
-    </div>
+    <div class="tab-content-wrapper">
+      <!-- Requirement Tab Content -->
+      <div id="requirement" class="tab-content active">
+        <h3>Requirement</h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Functional</th>
+              <th>Designer</th>
+              <th>Perfomer</th>
+              <th>Intended time</th>
+              <th>Current status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Web interface</td>
+              <td>Lương Hoài Sang</td>
+              <td>Lương Hoài Sang</td>
+              <td>2 weeks</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Contact</td>
+              <td>Huỳnh Thị Ngọc Trân</td>
+              <td>Huỳnh Thị Ngọc Trân</td>
+              <td>2 weeks</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Group dairy</td>
+              <td>Bùi Hà Duy Phong</td>
+              <td>Bùi Hà Duy Phong</td>
+              <td>2 weeks</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Project</td>
+              <td>Trần Đức Trí</td>
+              <td>Trần Đức Trí</td>
+              <td>2 weeks</td>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>About</td>
+              <td>Lê Trọng Nghĩa</td>
+              <td>Lê Trọng Nghĩa</td>
+              <td>2 weeks</td>
+              <td>Complete</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
 
-    <!-- Implement Tab Content -->
-    <div class="tab-content" id="implement">
-      <h3>Implement</h3>
-      <p>Describe the project execution process, including coding, testing, and system deployment.</p>
-    </div>
-  </div>
+      <!-- Design Tab Content -->
+      <div id="design" class="tab-content">
+        <h3>Design</h3>
+        <div class="tabs">
+          <button onclick="showTab('Home')">Home</button>
+          <button onclick="showTab('About')">About</button>
+          <button onclick="showTab('Group Diary')">Group Diary</button>
+          <button onclick="showTab('Project')">Project</button>
+          <button onclick="showTab('Contact')">Contact</button>
+        </div>
+        <div class="design-content">
+          <div id="Home" class="design-content-item" style="display: none">
+            <h4>Home</h4>
+            <p>
+              Here you will find the login for the project, outlining the basic
+              structure and layout.
+            </p>
+            <img src="images/home.jpg" alt="home design" class="design-img" />
+          </div>
+          <div id="About" class="design-content-item" style="display: none">
+            <h4>About</h4>
+            <p>
+              Mockups showcase a more detailed, visual design of the project.
+            </p>
+            <img src="images/about.jpg" alt="about design" class="design-img" />
+          </div>
+          <div
+            id="Group Diary"
+            class="design-content-item"
+            style="display: none"
+          >
+            <h4>Group Diary</h4>
+            <p>
+              Prototypes demonstrate the interactive elements and user flow of
+              the application.
+            </p>
+            <img
+              src="images/g_d.jpg"
+              alt="group diary design"
+              class="design-img"
+            />
+          </div>
+          <div id="Project" class="design-content-item" style="display: none">
+            <h4>Project</h4>
+            <p>
+              Design guidelines help maintain consistency in style, color,
+              typography, etc.
+            </p>
+            <img
+              src="images/project.jpg"
+              alt="project design"
+              class="design-img"
+            />
+          </div>
+          <div id="Contact" class="design-content-item" style="display: none">
+            <h4>Contact</h4>
+            <p>
+              Design guidelines help maintain consistency in style, color,
+              typography, etc.
+            </p>
+            <img
+              src="images/contact.jpg"
+              alt="contact design"
+              class="design-img"
+            />
+          </div>
+        </div>
+      </div>
 
-  <script>
-    function openTab(tabName, event) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        tabcontent[i].classList.remove("active");
+      <!-- Implement Tab Content -->
+      <div id="implement" class="tab-content">
+        <div class="im-container">
+          <!-- Navigation Buttons (Menu) -->
+          <div class="nav-buttons">
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+            <a href="#forgot-password">Forgot Password</a>
+          </div>
+
+          <!-- Login Section -->
+          <div id="login-section" class="feature-section">
+            <h2 class="feature-title">Login Function</h2>
+            <p class="feature-description">User authentication system</p>
+            <div class="feature-demo">
+              <form>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit" class="submit-button">Login</button>
+              </form>
+              <p class="form-footer">
+                Don't have an account?
+                <a href="#register" class="link">Register here</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Register Section -->
+          <div id="register-section" class="feature-section">
+            <h2 class="feature-title">Register Function</h2>
+            <p class="feature-description">New user registration system</p>
+            <div class="feature-demo">
+              <form>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button type="submit" class="submit-button">Register</button>
+              </form>
+              <p class="form-footer">
+                Already have an account?
+                <a href="#login" class="link">Login here</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Forgot Password Section -->
+          <div id="forgot-password-section" class="feature-section">
+            <h2 class="feature-title">Forgot Password Function</h2>
+            <p class="feature-description">Password recovery system</p>
+            <div class="feature-demo">
+              <p class="instruction">
+                Enter your email address and we'll send you a link to reset your
+                password.
+              </p>
+              <form>
+                <input type="email" placeholder="Email" required />
+                <button type="submit" class="submit-button">
+                  Send Reset Link
+                </button>
+              </form>
+              <p class="form-footer">
+                Remember your password?
+                <a href="#login" class="link">Back to login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-info">
+        <h3>IT Solutions</h3>
+        <p>We bring breakthrough technology solutions to your business.</p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="group-diary.html">Group Diary</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>
+          Address: Nong Lam University, Linh Trung, Thu Duc City, Ho Chi Minh
+          City
+        </p>
+        <p>Hotline: 1900 123 456</p>
+        <p>Email: Ourwebsite07@itcompany.com</p>
+        <p>&copy; 2024 Group 07</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript to handle tab switching and content display -->
+    <script>
+      function openTab(tabName, event) {
+        const tabcontent = document.querySelectorAll(".tab-content");
+        tabcontent.forEach((content) => (content.style.display = "none"));
+
+        const tablinks = document.querySelectorAll(".tab");
+        tablinks.forEach((link) => link.classList.remove("active"));
+
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.classList.add("active");
       }
 
-      tablinks = document.getElementsByClassName("tab");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
+      function showTab(tabId) {
+        const items = document.querySelectorAll(".design-content-item");
+        items.forEach((item) => {
+          item.style.display = item.id === tabId ? "block" : "none";
+        });
       }
 
-      document.getElementById(tabName).style.display = "block";
-      document.getElementById(tabName).classList.add("active");
-      event.currentTarget.classList.add("active");
-    }
-
-    // Show the default tab (requirement) by default
-    document.getElementById('requirement').style.display = 'block';
-  </script>
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="footer-info">
-      <h3>IT Solutions</h3>
-      <p>We bring breakthrough technology solutions to your business.</p>
-    </div>
-    <div class="footer-links">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="group-diary.html">Group Diary</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <p>Address: Nong Lam University, Linh Trung, Thu Duc City, Ho Chi Minh City</p>
-      <p>Hotline: 1900 123 456</p>
-      <p>Email: Ourwebsite07@itcompany.com</p>
-      <p>&copy; 2024 Group 07</p>
-    </div>
-  </footer>
-</body>
-
+      // Default tab open
+      document.getElementById("requirement").style.display = "block";
+    </script>
+  </body>
 </html>

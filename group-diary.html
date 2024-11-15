@@ -21,19 +21,18 @@
           <li><a href="group-diary.html">Group Diary</a></li>
           <li><a href="project.html">Project</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html" onclick="openLoginModal()">Login</a></li>
         </ul>
       </nav>
-      <div class="contact-info">
-        <p>Hotline: 1900 123 456</p>
-        <p>Email: Ourwebsite07@itcompany.com</p>
-      </div>
+      
     </header>
     <!-- Group Diary Section -->
     <section class="group-diary">
         <h2>Group Diary</h2>
         <div class="tabs">
-            <button class="tab-link active" onclick="openWeek(event, 'week1')">Week 1</button>
-            <button class="tab-link" onclick="openWeek(event, 'week2')">Week 2</button>
+            <button class="tab-link active" onclick="openWeek(event, 'week1')" aria-label="Week 1">Week 1</button>
+
+            <button class="tab-link" onclick="openWeek(event, 'week2')"  aria-label="Week 2">Week 2</button>
             <button class="tab-link" onclick="openWeek(event, 'week3')">Week 3</button>
             <button class="tab-link" onclick="openWeek(event, 'week4')">Week 4</button>
         </div>
@@ -43,71 +42,252 @@
             <table>
                 <thead>
                     <tr>
+                        <th>Stt</th>
+                        <th>MSSV</th>
                         <th>Name</th>
                         <th>Task</th>
+                        <th>result</th>
                         <th>Completion Rate</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Chris Hemsworth</td>
-                        <td>Deployment</td>
-                        <td>95%</td>
+                        <td>1</td>
+                        <td>23130270</td>
+                        <td>Luong Hoai Sang</td>
+                        <td>Design</td>
+                        <td>complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 100%;"></div>
+                                <div class="progress-text" id="progressText">100%</div>
+                            </div>
+                        </td>
+                        
                     </tr>
                     <tr>
-                        <td>Mark Ruffalo</td>
-                        <td>Documentation</td>
-                        <td>80%</td>
+                        <td>2</td>
+                        <td>23130209</td>
+                        <td>Le Trong Nghia</td>
+                        <td>Implement </td>
+                        <td>complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 100%;"></div>
+                                <div class="progress-text" id="progressText">100%</div>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>23130235</td>
+                        <td>Bui Ha Duy Phong</td>
+                        <td>Group Diary</td>
+                        <td>complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 100%;"></div>
+                                <div class="progress-text" id="progressText">100%</div>
+                            </div>
+                        </td>                        
+                    </tr>
+    
+                    <tr>
+                        <td>4</td>
+                        <td>23130347</td>
+                        <td>Tran Đuc Tri</td>
+                        <td>Project</td>
+                        <td>complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 100%;"></div>
+                                <div class="progress-text" id="progressText">100%</div>
+                            </div>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>23130342</td>
+                        <td>Huynh Thi Ngoc Tran</td>
+                        <td>Login</td>
+                        <td>complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 100%;"></div>
+                                <div class="progress-text" id="progressText">100%</div>
+                            </div>
+                        </td>                        
                     </tr>
                 </tbody>
             </table>
         </div>
+
 
         <!-- Week 2 Content -->
         <div id="week2" class="tab-content">
             <table>
                 <thead>
                     <tr>
+                        <th>Stt</th>
+                        <th>MSSV</th>
                         <th>Name</th>
                         <th>Task</th>
+                        <th>result</th>
                         <th>Completion Rate</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Michael Johnson</td>
-                        <td>Backend Development</td>
-                        <td>80%</td>
+                        <td>1</td>
+                        <td>23130270</td>
+                        <td>Luong Hoai Sang</td>
+                        <td></td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>                         
+                        </td>
+                        
                     </tr>
                     <tr>
-                        <td>Emma Watson</td>
-                        <td>Database Design</td>
-                        <td>85%</td>
+                        <td>2</td>
+                        <td>23130209</td>
+                        <td>Le Trong Nghia</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>23130235</td>
+                        <td>Bui Ha Duy Phong</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>4</td>
+                        <td>23130347</td>
+                        <td>Tran Đuc Tri</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>23130342</td>
+                        <td>Huynh Thi Ngoc Tran</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- Week 3 Content -->
-        <div id="week3" class="tab-content">
+         <!-- Week 3 Content -->
+         <div id="week3" class="tab-content">
             <table>
                 <thead>
                     <tr>
+                        <th>Stt</th>
+                        <th>MSSV</th>
                         <th>Name</th>
                         <th>Task</th>
+                        <th>result</th>
                         <th>Completion Rate</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Chris Evans</td>
-                        <td>API Integration</td>
-                        <td>70%</td>
+                        <td>1</td>
+                        <td>23130270</td>
+                        <td>Luong Hoai Sang</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Scarlett Johansson</td>
-                        <td>Security Testing</td>
-                        <td>65%</td>
+                        <td>2</td>
+                        <td>23130209</td>
+                        <td>Le Trong Nghia</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>23130235</td>
+                        <td>Bui Ha Duy Phong</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>4</td>
+                        <td>23130347</td>
+                        <td>Tran Đuc Tri</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>23130342</td>
+                        <td>Huynh Thi Ngoc Tran</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -118,21 +298,80 @@
             <table>
                 <thead>
                     <tr>
+                        <th>Stt</th>
+                        <th>MSSV</th>
                         <th>Name</th>
                         <th>Task</th>
+                        <th>result</th>
                         <th>Completion Rate</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Robert Downey</td>
-                        <td>Performance Optimization</td>
-                        <td>90%</td>
+                        <td>1</td>
+                        <td>23130270</td>
+                        <td>Luong Hoai Sang</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Tom Holland</td>
-                        <td>Final Testing</td>
-                        <td>85%</td>
+                        <td>2</td>
+                        <td>23130209</td>
+                        <td>Le Trong Nghia</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>23130235</td>
+                        <td>Bui Ha Duy Phong</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>4</td>
+                        <td>23130347</td>
+                        <td>Tran Đuc Tri</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>23130342</td>
+                        <td>Huynh Thi Ngoc Tran</td>
+                        <td> </td>
+                        <td>not complete</td>
+                        <td>
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+                                <div class="progress-text" id="progressText">0%</div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -151,6 +390,7 @@
             <li><a href="group-diary.html">Group Diary</a></li>
             <li><a href="project.html">Project</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" onclick="openLoginModal()">Login</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -163,7 +403,7 @@
       </footer>
   </body>
   
-    <script src="script.js"></script> <!-- Ensure to link to your JS file if any -->
+    <script src="g-r.js"></script> <!-- Ensure to link to your JS file if any -->
 </body>
 
 </html>
