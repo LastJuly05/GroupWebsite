@@ -109,8 +109,7 @@
     });
   }
   window.addEventListener("load", aosInit);
-
-  /**
+/**
    * Auto generate the carousel indicators
    */
   document
@@ -210,7 +209,7 @@
             isotopeItem
               .querySelector(".isotope-filters .filter-active")
               .classList.remove("filter-active");
-            this.classList.add("filter-active");
+this.classList.add("filter-active");
             initIsotope.arrange({
               filter: this.getAttribute("data-filter"),
             });
@@ -299,7 +298,7 @@ function openWeek(evt, weekName) {
   }
 
   // Xóa lớp 'active' khỏi tất cả các tab
-  tablinks = document.getElementsByClassName("tab-link");
+tablinks = document.getElementsByClassName("tab-link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
@@ -331,7 +330,11 @@ function updateProgressBar(progressBar, percentage) {
   // Cập nhật phần trăm hiển thị
   progressText.textContent = `${percentage}%`;
 }
-
+function viewSite(url) {
+  const iframe = document.getElementById("preview-iframe");
+  iframe.src = url;
+  document.getElementById("site-preview").style.display = "block";
+}
 // Thay đổi phần trăm ở đây để kiểm tra
 // const progressBar = document.getElementById('progressBar');
 // updateProgressBar(progressBar, 0);
