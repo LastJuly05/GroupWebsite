@@ -1,0 +1,304 @@
+/* Navigation Buttons */
+nav button {
+  background-color: #5ab9ea !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  margin: 0 10px !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease 0 !important;
+  padding: 12px 20px !important; /* Tăng khoảng cách bên trong button */
+  margin-top: 15px !important; /* Tạo khoảng cách phía trên */
+  margin-bottom: 15px !important; /* Khoảng cách phía dưới button */
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+nav button:hover {
+  background-color: #00bfff !important;
+  transform: scale(1.05) !important;
+}
+
+nav button.active {
+  background-color: #003366 !important;
+}
+
+/* Content sections */
+.content-section {
+  display: none;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* Layout section styling */
+.layout-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.layout-item {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.layout-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.layout-item h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Upload container */
+.upload-container {
+  border: 2px dashed #ccc;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.upload-container input[type="file"] {
+  display: none;
+}
+
+.upload-container label {
+  background-color: #5ab9ea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.uploaded-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.uploaded-image-container {
+  position: relative;
+  max-width: 150px;
+}
+
+.uploaded-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Color section */
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Image sizes */
+.image-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-size {
+  background: none;
+  border: 100px;
+  border-radius: 10%;
+  overflow: hidden;
+  max-width: 150px;
+}
+
+.image-size img {
+  width: 100%;
+  height: auto;
+}
+
+/* Typography section */
+.typography-section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.content-section .typography-section ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+/* Responsive Design with Media Queries */
+@media (max-width: 968px) {
+  /* On smaller screens, stack layout items */
+  .layout-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust typography */
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  nav button {
+    margin: 10px 0;
+  }
+
+  .layout-item {
+    padding: 15px;
+  }
+
+  .image-sizes {
+    justify-content: center;
+  }
+
+  .uploaded-image {
+    max-width: 100%; /* Allow images to take up full width */
+  }
+}
+
+/* For mobile-first (smaller devices) */
+@media (max-width: 480px) {
+  /* Adjust for very small screens */
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .content-section {
+    padding: 15px;
+  }
+
+  nav button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .layout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .layout-item {
+    padding: 12px;
+  }
+
+  .uploaded-image {
+    max-width: 100%;
+  }
+
+  .color-circle {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Large screens (desktop and above) */
+@media (min-width: 1024px) {
+  /* Keep the layout as grid with two columns */
+  .layout-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Increase font size for larger screens */
+  .hero h2 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .layout-item {
+    padding: 20px;
+  }
+}
+/* Style cho nút Reset Images */
+#resetButtonLay,
+#resetButtonDir {
+  background-color: #5ab9ea; /* Màu đỏ nhẹ để biểu thị reset */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; /* Thêm khoảng cách trên nút */
+}
+
+#resetButton:hover {
+  background-color: #5ab9ea; /* Đổi màu khi hover */
+  transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+#resetButton:focus {
+  outline: none; /* Loại bỏ viền khi nút được chọn */
+}
+/* Style cho thông báo Reset thành công */
+.reset-message {
+  background-color: #4caf50; /* Màu xanh lá cho thông báo thành công */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.reset-message.error {
+  background-color: #ff4d4d; /* Màu đỏ cho thông báo lỗi */
+  color: white;
+}

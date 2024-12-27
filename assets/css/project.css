@@ -1,0 +1,185 @@
+/* --------------------------project page------------------------- */
+.header-prjMenu {
+  display: flex;
+  justify-content: center;
+  object-fit: fill;
+
+  color: white;
+  padding: 20px;
+}
+.projectBigText {
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+  background-size: 100%;
+}
+.projectBigText h1 {
+  color: #003366;
+}
+.project-button .btn {
+  background-color: var(--background-color-light-blue);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+
+.project-button .btn:hover {
+  background-color: var(--background-color-pale-blue);
+}
+.button-list {
+  margin: 20px;
+}
+
+.tab-button {
+  font-size: 40px;
+  width: 300px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #003366;
+}
+
+.content-section {
+  padding: 20px;
+  background-color: #fff;
+
+  border-radius: 8px;
+}
+.content-section h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.visited-button {
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  transition: top 0.3s ease;
+}
+
+.visited-button:visited {
+  position: relative;
+  top: 5px;
+}
+
+th {
+  /* background-color:  ; */
+  width: 400px;
+}
+td {
+  vertical-align: bottom;
+}
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
+
+/*             THIS IS DESIGN PART CSS*/
+
+.button-list {
+  width: 80%;
+  margin: 0 auto;
+}
+#small-table {
+  width: 70px;
+}
+.expand-btn {
+  border-radius: 3px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: #3a6d8c;
+  border: 1px solid #3a6d8c;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 2s;
+}
+
+.expand-btn:hover {
+  background-color: #5ab9ea;
+}
+
+.content {
+  display: none;
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.content img {
+  margin: 10px;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+.div-right {
+  width: 300px;
+  align-items: start;
+}
+.div-left {
+  width: 300px;
+  align-items: end;
+}
+.left-p {
+  text-align: left;
+  font-size: 25px;
+}
+.block-div {
+  width: 45%;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+/*         THIS IS TECHNICAL PART CSS */
+/* .header-technical {
+  padding: 40px;
+  background-color: #3a5335;
+  color: white;
+} */
+.h1-header {
+  font-size: 40px;
+}
+.div-tech {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.img-tech {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.div-tech p {
+  text-align: left;
+  font-size: 16px;
+}
+.div-tech h1 {
+  text-align: center;
+}
+.div-tech img {
+  display: flex;
+  justify-content: center;
+}
