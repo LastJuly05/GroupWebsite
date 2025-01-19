@@ -109,7 +109,7 @@
     });
   }
   window.addEventListener("load", aosInit);
-/**
+  /**
    * Auto generate the carousel indicators
    */
   document
@@ -209,7 +209,7 @@
             isotopeItem
               .querySelector(".isotope-filters .filter-active")
               .classList.remove("filter-active");
-this.classList.add("filter-active");
+            this.classList.add("filter-active");
             initIsotope.arrange({
               filter: this.getAttribute("data-filter"),
             });
@@ -298,7 +298,7 @@ function openWeek(evt, weekName) {
   }
 
   // Xóa lớp 'active' khỏi tất cả các tab
-tablinks = document.getElementsByClassName("tab-link");
+  tablinks = document.getElementsByClassName("tab-link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
@@ -334,6 +334,24 @@ function viewSite(url) {
   const iframe = document.getElementById("preview-iframe");
   iframe.src = url;
   document.getElementById("site-preview").style.display = "block";
+}
+// design
+function downloadFile(fileName) {
+  const link = document.createElement("a");
+  link.href = `path/to/files/${fileName}`; // Đường dẫn file
+  link.download = fileName;
+  link.click();
+}
+
+function downloadAllFiles() {
+  const files = ["hand-paint.html", "result.html", "login-logout-register.html"];
+  files.forEach(file => {
+    downloadFile(file);
+  });
+}
+
+function goToHTML(fileURL) {
+  window.location.href = `path/to/html/${fileURL}`; // Điều hướng tới file HTML
 }
 // Thay đổi phần trăm ở đây để kiểm tra
 // const progressBar = document.getElementById('progressBar');
